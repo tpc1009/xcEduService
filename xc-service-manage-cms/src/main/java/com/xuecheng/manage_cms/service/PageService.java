@@ -128,5 +128,5 @@ public class PageService {
         return new ResponseResult(CommonCode.FAIL);
     }
 
->>>>>>> origin/master
+
 }

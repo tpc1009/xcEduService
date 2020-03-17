@@ -20,7 +20,7 @@ public interface CmsPageControllerApi {
     })
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
 
-<<<<<<< HEAD
+
     //添加数据(站点)
     @ApiOperation("添加站点数据")
     @ApiImplicitParams({
@@ -38,5 +38,5 @@ public interface CmsPageControllerApi {
     @ApiOperation("根据id删除")
     public ResponseResult delete(String id);
 
->>>>>>> origin/master
+
 }
