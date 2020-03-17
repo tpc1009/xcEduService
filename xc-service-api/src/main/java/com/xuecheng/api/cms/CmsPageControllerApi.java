@@ -30,4 +30,5 @@ public interface CmsPageControllerApi {
     @ApiOperation("根据id删除")
     public ResponseResult delete(String id);
 
+
 }
