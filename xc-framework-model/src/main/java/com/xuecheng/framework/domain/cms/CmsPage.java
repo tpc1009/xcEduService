@@ -16,6 +16,7 @@ import java.util.List;
  */
 @Data
 @ToString
+/*使用mongdb数据库*/
 @Document(collection = "cms_page")
 public class CmsPage {
     /**

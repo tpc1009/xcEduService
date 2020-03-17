@@ -12,7 +12,6 @@ import lombok.Data;
 public class QueryPageRequest {
     //接收页面查询的查询条件
     //站点id
-    //站点id
     @ApiModelProperty("站点id")
     private String siteId;
     //页面ID
