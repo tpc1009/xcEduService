@@ -4,6 +4,7 @@ import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
 import com.xuecheng.framework.model.response.QueryResponseResult;
+import com.xuecheng.framework.model.response.ResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -19,10 +20,23 @@ public interface CmsPageControllerApi {
     })
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
 
+<<<<<<< HEAD
     //添加数据(站点)
     @ApiOperation("添加站点数据")
     @ApiImplicitParams({
             @ApiImplicitParam(name="cmsPage",value = "页面信息",required = true)
     })
     public CmsPageResult add(CmsPage cmsPage);
+
+
+    @ApiOperation("根据id查询")
+    public CmsPage findById(String id);
+
+    @ApiOperation("修改cms")
+    public CmsPageResult edit(String id, CmsPage cmsPage);
+
+    @ApiOperation("根据id删除")
+    public ResponseResult delete(String id);
+
+>>>>>>> origin/master
 }
