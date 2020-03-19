@@ -203,8 +203,8 @@ public class PageService {
         configuration.setTemplateLoader(stringTemplateLoader);
         //获取模板
         Template template = configuration.getTemplate("template");
-            String html = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
-            return html;
+        String html = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
+        return html;
         } catch (Exception e) {
             e.printStackTrace();
         }
