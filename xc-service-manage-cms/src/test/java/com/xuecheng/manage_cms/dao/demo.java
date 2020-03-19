@@ -6,8 +6,6 @@ package com.xuecheng.manage_cms.dao;
  */
 public class demo {
     public static void main(String[] args) {
-        MyRunnable myRunnable = new MyRunnable();
-        Thread thread = new Thread(myRunnable,"线程");
-        thread.start();
+
     }
 }
