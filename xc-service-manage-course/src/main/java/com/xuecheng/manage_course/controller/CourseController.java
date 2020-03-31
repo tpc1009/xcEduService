@@ -5,6 +5,7 @@ import com.xuecheng.framework.domain.course.Teachplan;
 import com.xuecheng.framework.domain.course.ext.CategoryNode;
 import com.xuecheng.framework.domain.course.ext.TeachplanNode;
 import com.xuecheng.framework.model.response.ResponseResult;
+import com.xuecheng.manage_course.client.CmsPageClient;
 import com.xuecheng.manage_course.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/course")
 public class CourseController implements CourseControllerApi {
+
+
+    @Autowired
+    private CmsPageClient cmsPageClient;
 
     @Autowired
     private CourseService courseService;
